@@ -1,0 +1,30 @@
+body, html {
+    background-color: #333;
+}
+
+p, h1, h2, h3 {
+    color: #ccc;
+}
+
+a {
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
+    padding: 0 5px;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: #666666;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    background-color: black;
+    color: #ccc;
+    justify-content: space-around;
+    padding: 10px;
+}

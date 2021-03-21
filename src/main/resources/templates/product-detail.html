@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/head ::htmlhead"></head>
+<body>
+<div th:replace="fragments/navigation ::navbar"></div>
+<h2>Product List</h2>
+<section>
+
+    <h3 th:text="${product.name}"></h3>
+    <h3 th:text="${product.id}"></h3>
+    <h3 th:text="${product.count}"></h3>
+    <h3 th:text="${product.price}"></h3>
+    <h3 th:text="${product.description}"></h3>
+    <img th:if="${product.pathToImage != null}" th:src="@{/images/{path} (path=${product.pathToImage})}">
+
+    </div>
+</section>
+</body>
+</html>
